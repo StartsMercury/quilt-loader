@@ -71,6 +71,7 @@ public interface GameProvider {
 		return LoaderUtil.hasAwtSupport();
 	}
 
+	@QuiltLoaderInternal(QuiltLoaderInternalType.LEGACY_EXPOSED)
 	class BuiltinMod {
 		public BuiltinMod(List<Path> paths, InternalModMetadata metadata) {
 			Objects.requireNonNull(paths, "null paths");

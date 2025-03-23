@@ -58,6 +58,7 @@ public interface ModMetadataExt extends ModMetadata, ModMetadataToBeMovedToPlugi
 	@Nullable
 	ModPlugin plugin();
 
+	@QuiltLoaderInternal(QuiltLoaderInternalType.PLUGIN_API)
 	public enum ModLoadType {
 		ALWAYS,
 		IF_POSSIBLE,

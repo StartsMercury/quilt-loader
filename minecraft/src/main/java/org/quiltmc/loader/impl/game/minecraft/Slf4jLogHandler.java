@@ -16,6 +16,8 @@
 
 package org.quiltmc.loader.impl.game.minecraft;
 
+import org.quiltmc.loader.impl.util.QuiltLoaderInternal;
+import org.quiltmc.loader.impl.util.QuiltLoaderInternalType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -24,7 +26,7 @@ import org.quiltmc.loader.impl.util.log.LogCategory;
 import org.quiltmc.loader.impl.util.log.LogHandler;
 import org.quiltmc.loader.impl.util.log.LogLevel;
 
-
+@QuiltLoaderInternal(QuiltLoaderInternalType.LEGACY_NO_WARN)
 public final class Slf4jLogHandler implements LogHandler {
 	@Override
 	public boolean shouldLog(LogLevel level, LogCategory category) {
